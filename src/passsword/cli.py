@@ -18,8 +18,8 @@ def main():
     )
 
     subparsers.add_parser(
-        "evaluate",
-        help="Evaluate password"
+        "check",
+        help="Check password"
     )
 
     subparsers.add_parser(
@@ -32,7 +32,7 @@ def main():
     print(f"The chosen subcommand is: {args.command}")
     if args.command == "generate":
         print("generate")
-    elif args.command == "evaluate":
-        print("evaluate")
+    elif args.command == "check":
+        print("check")
     elif args.command == "leaked":
         print("leaked")
